@@ -8,16 +8,13 @@ def count_all(txt):
     Returns:
         dict: dictionary with letters and digits
     """
-    text = {}
     num = 0
     lat = 0
     for i in txt:
         if txt.isdigit():
             num += 1
-        if txt.isalpha():
+        if not(txt.isdigit)():
             lat += 1
-    text["LATTERS"]= lat
-    text["DIGITS"] = num
 
-    return text
+    return {"LATTERS":lat,"DIGITS":num}
 print(count_all("Hello_World"))
