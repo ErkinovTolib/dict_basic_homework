@@ -9,7 +9,7 @@ def create_dictionary(key, value):
     """
     dic = {}
     for i in range(len(key)):
-        dic[i] = value[i]
+        dic[key[i]] = value[i]
 
 
     return dic
