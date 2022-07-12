@@ -10,11 +10,11 @@ def count_all(txt):
     """
     num = 0
     lat = 0
-    for i in txt:
-        if txt.isdigit():
+    for i in range(len(txt)):
+        if str(txt[i]).isdigit():
             num += 1
-        if not(txt.isdigit)():
+        if str(txt[i]).isalpha():
             lat += 1
 
     return {"LETTERS":lat,"DIGITS":num}
-print(count_all("Hello_World"))
+print(count_all("Hello_World2022"))
