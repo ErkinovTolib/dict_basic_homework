@@ -14,7 +14,7 @@ def count_all(txt):
     for i in txt:
         if txt.isdigit():
             num += 1
-        if not(txt.isdigit()):
+        if txt.isalpha():
             lat += 1
     text["LATTERS"]= lat
     text["DIGITS"] = num
