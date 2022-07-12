@@ -16,5 +16,5 @@ def count_all(txt):
         if not(txt.isdigit)():
             lat += 1
 
-    return {"LATTERS":lat,"DIGITS":num}
+    return {"LETTERS":lat,"DIGITS":num}
 print(count_all("Hello_World"))
