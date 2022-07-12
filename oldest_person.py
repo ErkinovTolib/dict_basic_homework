@@ -13,7 +13,7 @@ def oldest(people:dict):
     x = max(older)
     for j in people:
         if people[j]==x:
-            return x
-people = {"Javohir": 22, "Sharof": 23, "Tolib": 34, "Rustam": 16}
-print(oldest(people))
+            return j
+print(oldest({"Javohir": 22, "Sharof": 23, "Tolib": 34, "Rustam": 16}))
 
+ 
